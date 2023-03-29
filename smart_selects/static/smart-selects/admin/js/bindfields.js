@@ -64,6 +64,7 @@
     $(document).on('formset:added', function (event, $row, formsetName) {
         // Fired every time a new inline formset is created
 
+        if (!$row) $row = $(event.target);
         var chainedFK, chainedM2M, filteredM2M;
 
         // For the ForeingKey
