@@ -74,7 +74,6 @@
     // For the ForeingKey
     chainedFK = $row.find(".chained-fk");
     $.each(chainedFK, function (index, chained) {
-      console.log(chained);
       initFormset(chained);
     });
 
